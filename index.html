@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Title prompting the user to start the game -->
+  <h1 id="level-title">Press any key or the button to Start</h1>
+  <!-- Start button -->
+  <button id="start-button">Start</button>
+  <!-- Restart button added, initially hidden -->
+  <button id="restart-button" style="display: none;">Restart Game</button>
+  <div class="container">
+    <!-- Row containing green and red buttons -->
+    <div class="row">
+
+      <!-- Green button -->
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <!-- Red button -->
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <!-- Row containing yellow and blue buttons -->
+    <div class="row">
+
+      <!-- Yellow button -->
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <!-- Blue button -->
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- jQuery library for DOM manipulation -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Game logic script -->
+  <script src="game.js" charset="utf-8"></script>
+
+  <!-- Footer added -->
+  <footer>
+    <p>Built by Yarden Itzhaky</p>
+  </footer>
+</body>
+</html>

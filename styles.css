@@ -1,0 +1,131 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 5% 2%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.btn {
+  margin: 10px;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  border: 7px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+#start-button, #restart-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  background-color: #4CAF50; /* Vibrant green color */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded corners for a pill-like shape */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  font-family: 'Press Start 2P', cursive; /* Matching font with the title */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 2px; /* Spacing between letters */
+}
+
+#start-button:hover, #restart-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#start-button:active, #restart-button:active {
+  transform: translateY(1px); /* Pressed down effect when clicked */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow when pressed */
+}
+
+footer {
+  margin-top: auto;
+  padding: 10px;
+  color: #FEF2BF;
+  font-size: 0.8rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #level-title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    height: 120px;
+    width: 120px;
+    margin: 8px;
+  }
+
+  #start-button, #restart-button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #level-title {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+  }
+
+  #start-button, #restart-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
